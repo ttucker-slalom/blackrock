@@ -155,7 +155,7 @@
         },
         {
           "title": "Content Fragment",
-          "id": "contentfragment",
+          "id": "aem-content-fragment",
           "plugins": {
             "xwalk": {
               "page": {
