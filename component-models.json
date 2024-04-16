@@ -244,5 +244,17 @@
         ]
       }
     ]
+  },
+  {
+    "id": "contentfragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
+      }
+    ]
   }
 ]
