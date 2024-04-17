@@ -199,10 +199,10 @@
         "valueType": "string"
       },
       {
-        "component": "select",
-        "name": "type",
+        "component": "multiselect",
+        "name": "style",
         "value": "",
-        "label": "Type",
+        "label": "Style",
         "valueType": "string",
         "options": [
           {
