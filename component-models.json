@@ -200,7 +200,7 @@
       },
       {
         "component": "multiselect",
-        "name": "style",
+        "name": "classes",
         "value": "",
         "label": "Style",
         "valueType": "string",
