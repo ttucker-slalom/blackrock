@@ -147,7 +147,10 @@
                   "name": "Teaser",
                   "model": "teaser",
                   "foreground_title": "New Teaser",
-                  "foreground_titleType": "h3"
+                  "foreground_titleType": "h3",
+                  "cta_1": {
+                    "model": "button"
+                  }
                 }
               }
             }
