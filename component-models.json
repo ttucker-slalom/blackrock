@@ -329,17 +329,11 @@
     "fields": [
       {
         "component": "aem-content-fragment",
-        "name": "offerpath",
+        "name": "contentfragmentpath",
         "value": "",
-        "label": "Offer Content Fragment path",
-        "valueType": "string"
-      },
-      {
-        "component": "text-input",
-        "name": "variation",
-        "value": "",
-        "label": "Variation",
-        "valueType": "string"
+        "label": "Content Fragment path",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
       }
     ]
   }
