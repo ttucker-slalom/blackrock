@@ -1,5 +1,21 @@
 [
   {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "theme",
+        "label": "Theme"
+      },
+      {
+        "component": "richtext",
+        "name": "abstract",
+        "label": "Absrtact",
+        "description": "Enter an abstract for site search"
+      }
+    ]
+  },
+  {
     "id": "title",
     "fields": [
       {
@@ -298,6 +314,13 @@
         "name": "href",
         "value": "",
         "label": "CTA Link"
+      },
+      {
+        "component": "button",
+        "valueType": "string",
+        "name": "button",
+        "value": "",
+        "label": "CTA"
       }
     ]
   },
@@ -306,10 +329,17 @@
     "fields": [
       {
         "component": "aem-content-fragment",
-        "name": "picker",
-        "label": "Content Fragment Picker",
-        "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "name": "offerpath",
+        "value": "",
+        "label": "Offer Content Fragment path",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "variation",
+        "value": "",
+        "label": "Variation",
+        "valueType": "string"
       }
     ]
   }
