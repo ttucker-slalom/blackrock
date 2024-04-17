@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p11802-e21402.adobeaemcloud.com/bin/franklin.delivery/ttucker-slalom/blackrock/main"
+    url: "https://author-p11802-e92257.adobeaemcloud.com/bin/franklin.delivery/ttucker-slalom/blackrock/main"
     type: "markup"
     suffix: ".html"
