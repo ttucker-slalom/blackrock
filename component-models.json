@@ -223,6 +223,9 @@
   },
   {
     "id": "teaser",
+    "options": [
+      {"name": "example", "value": "example"}
+    ],
     "fields": [
       {
         "component": "reference",
@@ -250,19 +253,19 @@
         "name": "foreground_title",
         "value": "",
         "label": "Title",
-        "valueType": "string"
+        "valueType": "string",
+        "options": [
+          {"name": "h2", "value": "h2"},
+          {"name": "h3", "value": "h3"},
+          {"name": "h4", "value": "h4"}
+      ]
       },
       {
         "component": "richtext",
         "name": "foreground_description",
         "value": "",
         "label": "Description",
-        "valueType": "string",
-        "options": [
-            {"name": "h2", "value": "h2"},
-            {"name": "h3", "value": "h3"},
-            {"name": "h4", "value": "h4"}
-        ]
+        "valueType": "string"
       }
     ]
   },
