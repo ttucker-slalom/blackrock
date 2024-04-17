@@ -197,6 +197,27 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
+          {
+            "name": "Left Image",
+            "value": "left-image"
+          },
+          {
+            "name": "Right Image",
+            "value": "right-image"
+          }
+        ]
       }
     ]
   },
