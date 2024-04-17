@@ -288,6 +288,13 @@
       {
         "component": "text",
         "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
         "name": "href",
         "value": "",
         "label": "CTA Link"
