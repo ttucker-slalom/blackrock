@@ -28,7 +28,9 @@
       "hero",
       "cards",
       "columns",
-      "teaser"
+      "teaser",
+      "aem-content-fragment"
+
     ]
   },
   {
