@@ -266,6 +266,17 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Classes",
+        "valueType": "string",
+        "options": [
+          {"name": "Right Image", "value": "right-image"},
+          {"name": "Left Image", "value": "left-image"}
+        ]
       }
     ]
   },
