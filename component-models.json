@@ -57,6 +57,47 @@
             "value": "h6"
           }
         ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Heading Display1",
+            "value": "heading-display1"
+          },
+          {
+            "name": "Heading XL",
+            "value": "heading-xl"
+          },
+          {
+            "name": "Heading L",
+            "value": "heading-l"
+          },
+          {
+            "name": "Heading M",
+            "value": "heading-m"
+          },
+          {
+            "name": "Heading S",
+            "value": "heading-s"
+          },
+          {
+            "name": "Subheading L",
+            "value": "subheading-l"
+          },
+          {
+            "name": "Subheading S",
+            "value": "subheading-s"
+          },
+          {
+            "name": "Subheading XS",
+            "value": "subheading-xs"
+          }
+        ]
       }
     ]
   },
