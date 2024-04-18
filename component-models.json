@@ -150,7 +150,7 @@
         "label": "Classes",
         "valueType": "string",
         "options": [
-          {"name": "Main Teaser", "value": "main-teaser"}
+          {"name": "Main Teaser Block", "value": "main-teaser-block"}
         ]
       }
     ]
