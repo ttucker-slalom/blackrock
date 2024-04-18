@@ -19,47 +19,108 @@
   --dark-color: #ccc;
   --text-color: black;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  /* Blackrock primary palette */
+  --blk-black: #000000;
+  --blk-white: #FFFFFF;
+  --blk-orange: #FF4713;
+  --blk-pink: #FC9BB3;
+  --blk-yellow: #FFCE00;
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 18px;
-  --body-font-size-xs: 16px;
+  /* Blackrock neutral palette */
+  --blk-neutral-1: #F4F1EB;
+  --blk-neutral-2: #EAE7E1;
+
+  /* fonts */
+  --heading-font-family: 'FortExtraBold', Arial, sans-serif;
+  --subheading-font-family: 'FortBold', Arial, sans-serif;
+  --body-font-family: 'FortBook', Arial, sans-serif;
+  --body-bold-font-family: 'FortBold', Arial, sans-serif;
+
+  /* Sizes based on breakpoint XS (0 - 599px) */
 
   /* heading sizes */
-  --heading-font-size-xxl: 48px;
-  --heading-font-size-xl: 40px;
-  --heading-font-size-l: 32px;
-  --heading-font-size-m: 24px;
-  --heading-font-size-s: 20px;
-  --heading-font-size-xs: 18px;
+  --heading-display1: 40px;
+  --heading-xl: 40px;
+  --heading-l: 32px;
+  --heading-m: 24px;
+  --heading-s: 24px;
+
+  /* subheading sizes */
+  --subheading-l: 24px;
+  --subheading-s: 24px;
+  --subheading-sx: 20px;
+
+  /* body sizes */
+  --body-l: 20px;
+  --body-m: 16px;
+  --body-s: 12px;
+  
+  /* heading line height sizes */
+  --heading-display1-line-height: 48px;
+  --heading-xl-line-height: 48px;
+  --heading-l-line-height: 40px;
+  --heading-m-line-height: 32px;
+  --heading-s-line-height: 32px;
+
+  /* subheading line height sizes */
+  --subheading-l-line-height: 32px;
+  --subheading-s-line-height: 32px;
+  --subheading-sx-line-height: 28px;
+
+  /* body line height sizes */
+  --body-l-line-height: 28px;
+  --body-m-line-height: 24px;
+  --body-s-line-height: 16px;
 
   /* nav height */
   --nav-height: 64px;
 }
 
 @font-face {
-  font-family: roboto-fallback;
+  font-family: FortBook;
   size-adjust: 100.06%;
   ascent-override: 95%;
   src: local('Arial');
 }
 
-@media (width >= 900px) {
+/* Breakpoint S */
+@media (width >= 600px) {}
+
+/* Breakpoint M */
+@media (width >=768px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
+    --heading-display1: 56px;
+    --heading-display1-line-height: 64px;
   }
 }
 
-body {
+/* Breakpoint L */
+@media (width >= 1024px) {
+  :root {
+    --heading-display1: 72px;
+    --heading-xl: 48px;
+    --heading-l: 40px;
+    --heading-m: 32px;
+    --heading-display1-line-height: 80px;
+    --heading-xl-line-height: 56px;
+    --heading-l-line-height: 48px;
+    --heading-m-line-height: 40px;
+  }
+}
+
+/* Breakpoint XL */
+@media (width >= 1440) {
+  :root {
+    --heading-display1: 80px;
+    --heading-xl: 56px;
+    --subheading-l: 32px;
+    --heading-display1-line-height: 88px;
+    --heading-xl-line-height: 64px;
+    --subheading-l-line-height: 40px;
+  }
+}
+
+/* body {
   font-size: var(--body-font-size-m);
   margin: 0;
   font-family: var(--body-font-family);
@@ -67,7 +128,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
-}
+} */
 
 body.appear {
   display: block;
@@ -77,7 +138,7 @@ header {
   height: var(--nav-height);
 }
 
-h1, h2, h3,
+/* h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
   font-weight: 600;
@@ -85,14 +146,7 @@ h4, h5, h6 {
   margin-top: 1em;
   margin-bottom: .5em;
   scroll-margin: calc(var(--nav-height) + 1em);
-}
-
-h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
-h5 { font-size: var(--heading-font-size-s) }
-h6 { font-size: var(--heading-font-size-xs) }
+} */
 
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
