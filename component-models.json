@@ -60,9 +60,9 @@
       },
       {
         "component": "multiselect",
-        "name": "classes",
+        "name": "style",
         "value": "",
-        "label": "Classes",
+        "label": "Style",
         "valueType": "string",
         "options": [
           {
