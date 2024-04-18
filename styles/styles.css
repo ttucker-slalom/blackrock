@@ -20,8 +20,8 @@
   --text-color: black;
 
   /* Blackrock primary palette */
-  --blk-black: #000000;
-  --blk-white: #FFFFFF;
+  --blk-black: #000;
+  --blk-white: #FFF;
   --blk-orange: #FF4713;
   --blk-pink: #FC9BB3;
   --blk-yellow: #FFCE00;
@@ -31,10 +31,10 @@
   --blk-neutral-2: #EAE7E1;
 
   /* fonts */
-  --heading-font-family: 'FortExtraBold', Arial, sans-serif;
-  --subheading-font-family: 'FortBold', Arial, sans-serif;
-  --body-font-family: 'FortBook', Arial, sans-serif;
-  --body-bold-font-family: 'FortBold', Arial, sans-serif;
+  --heading-font-family: 'FortExtraBold', "arial", sans-serif;
+  --subheading-font-family: 'FortBold', "arial", sans-serif;
+  --body-font-family: 'FortBook', "arial", sans-serif;
+  --body-bold-font-family: 'FortBold', "arial", sans-serif;
 
   /* Sizes based on breakpoint XS (0 - 599px) */
 
@@ -84,7 +84,8 @@
 }
 
 /* Breakpoint S */
-@media (width >= 600px) {}
+
+/* @media (width >= 600px) {} */
 
 /* Breakpoint M */
 @media (width >=768px) {
