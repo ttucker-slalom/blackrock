@@ -126,9 +126,9 @@
       },
       {
         "component": "select",
-        "name": "style",
+        "name": "classes",
         "value": "",
-        "label": "Style",
+        "label": "Classes",
         "valueType": "string",
         "options": [
           {
