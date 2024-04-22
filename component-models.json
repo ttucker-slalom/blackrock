@@ -151,10 +151,6 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Nav Utilities",
-            "value": "nav-utilities"
-          },
-          {
             "name": "Main Teaser Block",
             "value": "main-teaser-block"
           },
@@ -202,6 +198,10 @@
           {
             "name": "Light",
             "value": "light"
+          },
+          {
+            "name": "Nav Utilities",
+            "value": "nav-utilities"
           }
         ]
       }
