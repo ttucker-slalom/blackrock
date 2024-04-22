@@ -198,10 +198,6 @@
           {
             "name": "Light",
             "value": "light"
-          },
-          {
-            "name": "Nav Utilities",
-            "value": "nav-utilities"
           }
         ]
       }
