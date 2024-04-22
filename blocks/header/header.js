@@ -102,7 +102,7 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['brand', 'sections', 'tools'];
+  const classes = ['utilities', 'brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
@@ -113,6 +113,20 @@ export default async function decorate(block) {
   if (brandLink) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
+  }
+
+  const navUtilities = nav.querySelector('.nav-utilities');
+  if (navUtilities) {
+    navUtilities.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navUtility) => {
+      if (navUtility.querySelector('ul')) navUtility.classList.add('nav-drop');
+      navUtility.addEventListener('hover', () => {
+        if (isDesktop.matches) {
+          const expanded = navUtility.getAttribute('aria-expanded') === 'true';
+          toggleAllNavSections(navUtilities);
+          navUtility.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        }
+      });
+    });
   }
 
   const navSections = nav.querySelector('.nav-sections');
