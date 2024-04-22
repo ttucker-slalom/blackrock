@@ -221,6 +221,27 @@ a.button:any-link, button {
 a.button.primary {
   background-color: var(--blk-white);
   color: var(--blk-black);
+  position: relative;
+}
+
+a.button.primary:hover {
+  text-decoration: none;
+}
+
+a.button.primary::after {
+  content: "";
+  height: 3px;
+  display: block;
+  width: 0;
+  transition: width .3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--blk-orange);
+}
+
+a.button.primary:hover::after {
+  width: 100%;
 }
 
 a.button.secondary {
