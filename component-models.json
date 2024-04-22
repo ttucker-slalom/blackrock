@@ -123,6 +123,23 @@
             "value": "secondary"
           }
         ]
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Classes",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Light",
+            "value": "btn-light"
+          },
+          {
+            "name": "Dark",
+            "value": "btn-dark"
+          }
+        ]
       }
     ]
   },
