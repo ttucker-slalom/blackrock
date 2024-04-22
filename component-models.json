@@ -151,6 +151,10 @@
         "valueType": "string",
         "options": [
           {
+            "name": "Nav Utilities",
+            "value": "nav-utilities"
+          },
+          {
             "name": "Main Teaser Block",
             "value": "main-teaser-block"
           },
