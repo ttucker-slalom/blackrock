@@ -150,7 +150,14 @@
         "label": "Classes",
         "valueType": "string",
         "options": [
-          {"name": "Main Teaser Block", "value": "main-teaser-block"}
+          {
+            "name": "Main Teaser Block",
+            "value": "main-teaser-block"
+          },
+          {
+            "name": "Featured Article",
+            "value": "featured-article"
+          }
         ]
       }
     ]
