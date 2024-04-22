@@ -295,9 +295,13 @@ main img {
 }
 
 /* section metadata */
-main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+main .section.light {
+  background-color: var(--blk-white);
+  color: var(--blk-black);
 }
 
 main .section.dark {
