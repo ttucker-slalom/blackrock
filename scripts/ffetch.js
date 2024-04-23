@@ -19,13 +19,23 @@ async function* request(url, context) {
       const params = new URLSearchParams(`offset=${offset}&limit=${chunkSize}`);
       if (sheetName) params.append('sheet', sheetName);
       const resp = await fetch(`${url}?${params.toString()}`);
-      const respArr = new Array(resp);
-      console.log('resp??', respArr);
+      // console.log('array?', resp.isArray());
+      // const respArr = new Array(resp);
+      // console.log('resp??', respArr);
+      console.log('response?', resp);
       console.log("resp>>"+resp);
       if (resp.ok) {
         const json = await resp.json();
-        console.log("json>>",json.data);
-        for (const entry of json.data) yield json.data;
+        if (json instanceof Array) {
+          console.log('true')
+          console.log("json>>",json.data);
+          for (const entry of json.data) yield json.data;
+        } else {
+          console.log('false')
+          const dataArr = new Array(json.data);
+          console.log("new Array",dataArr);
+          for (const entry of dataArr) yield dataArr;
+        }
       } else {
         return;
       }
