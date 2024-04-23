@@ -27,4 +27,4 @@ export default async function decorate(block) {
         </div>
     </div>
   `;
-  }
+}
