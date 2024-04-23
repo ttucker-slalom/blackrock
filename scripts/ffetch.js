@@ -13,27 +13,18 @@
 /* eslint-disable no-restricted-syntax,  no-await-in-loop */
 
 async function* request(url, context) {
-    console.log("url==1>>"+url);
     const { chunkSize, sheetName, fetch } = context;
     for (let offset = 0, total = Infinity; offset < total; offset += chunkSize) {
       const params = new URLSearchParams(`offset=${offset}&limit=${chunkSize}`);
       if (sheetName) params.append('sheet', sheetName);
       const resp = await fetch(`${url}?${params.toString()}`);
-      // console.log('array?', resp.isArray());
-      // const respArr = new Array(resp);
-      // console.log('resp??', respArr);
-      console.log('response?', resp);
-      console.log("resp>>"+resp);
       if (resp.ok) {
         const json = await resp.json();
-        if (json instanceof Array) {
-          console.log('true')
-          console.log("json>>",json.data);
-          for (const entry of json.data) yield json.data;
+        const jsonList =json.data;
+        if (jsonList instanceof Array) {
+          for (const entry of jsonList) yield json.data;
         } else {
-          console.log('false')
           const dataArr = new Array(json.data);
-          console.log("new Array",dataArr);
           for (const entry of dataArr) yield dataArr;
         }
       } else {
@@ -181,7 +172,6 @@ async function* request(url, context) {
   }
   
   export default function ffetch(url) {
-console.log("url>>",url);
     let chunkSize = 255;
     const fetch = (...rest) => window.fetch.apply(null, rest);
     const parseHtml = (html) => new window.DOMParser().parseFromString(html, 'text/html');
