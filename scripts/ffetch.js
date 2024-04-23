@@ -19,6 +19,8 @@ async function* request(url, context) {
       const params = new URLSearchParams(`offset=${offset}&limit=${chunkSize}`);
       if (sheetName) params.append('sheet', sheetName);
       const resp = await fetch(`${url}?${params.toString()}`);
+      const respArr = new Array(resp);
+      console.log('resp??', respArr);
       console.log("resp>>"+resp);
       if (resp.ok) {
         const json = await resp.json();
