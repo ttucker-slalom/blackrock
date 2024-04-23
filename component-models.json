@@ -192,6 +192,10 @@
         "valueType": "string",
         "options": [
           {
+            "name": "Nav Utilities",
+            "value": "nav-utilities"
+          },
+          {
             "name": "Dark",
             "value": "dark"
           },
