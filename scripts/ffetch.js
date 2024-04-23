@@ -25,7 +25,7 @@ async function* request(url, context) {
       if (resp.ok) {
         const json = await resp.json();
         console.log("json>>",json.data);
-        yield json.data;
+        for (const entry of json.data) yield json.data;
       } else {
         return;
       }
