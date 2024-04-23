@@ -114,21 +114,6 @@ export default async function decorate(block) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
   }
-
-  // const navUtilities = nav.querySelector('.nav-utilities');
-  // if (navUtilities) {
-  //   navUtilities.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navUtility) => {
-  //     if (navUtility.querySelector('ul')) navUtility.classList.add('nav-drop');
-  //     navUtility.addEventListener('hover', () => {
-  //       if (isDesktop.matches) {
-  //         const expanded = navUtility.getAttribute('aria-expanded') === 'true';
-  //         toggleAllNavSections(navUtilities);
-  //         navUtility.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-  //       }
-  //     });
-  //   });
-  // }
-
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
