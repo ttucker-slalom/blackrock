@@ -30,7 +30,8 @@
       "columns",
       "teaser",
       "aem-content-fragment",
-      "aem-experience-fragment"
+      "aem-experience-fragment",
+      "aem-content-picker"
 
     ]
   },
