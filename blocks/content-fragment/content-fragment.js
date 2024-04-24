@@ -7,7 +7,7 @@ export default async function decorate(block) {
     ? `${aemauthorurl}${persistedquery};adventurePath=${insightsPath};`
     : `${aempublishurl}${persistedquery};adventurePath=${insightsPath};`;
   const options = { credentials: 'include' };
-  const cfReq = await fetch(url, options)
+  const cfResponse = await fetch(url, options)
     .then((response) => response.json())
     .then((contentfragment) => {
       let insight = '';
@@ -20,8 +20,8 @@ export default async function decorate(block) {
   block.innerHTML = `
     <div class='insights' data-aue-resource=${itemId} data-aue-type="reference" data-aue-filter="cf">
         <div>
-          <h2 data-aue-prop="headline" data-aue-type="text" class='insights-title'>${cfReq.title}</h2>
-          <p data-aue-prop="headline" data-aue-type="text" class='insights-description'>${cfReq.description.plaintext}</p>
+          <h2 data-aue-prop="headline" data-aue-type="text" class='insights-title'>${cfResponse.title}</h2>
+          <p data-aue-prop="headline" data-aue-type="text" class='insights-description'>${cfResponse.description.plaintext}</p>
         </div>
     </div>
   `;
