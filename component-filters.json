@@ -29,7 +29,8 @@
       "cards",
       "columns",
       "teaser",
-      "aem-content-fragment"
+      "aem-content-fragment",
+      "aem-experience-fragment"s
 
     ]
   },
