@@ -22,7 +22,7 @@
         "component": "text",
         "valueType": "string",
         "name": "jcr:title",
-        "value": "",
+        "value": "Title",
         "label": "Text"
       },
       {
@@ -388,8 +388,9 @@
         "component": "aem-content",
         "name": "reference",
         "value": "",
-        "label": "AEM Content Picker2",
-        "valueType": "string"       
+        "label": "AEM Content Picker",
+        "valueType": "string",
+        "rootPath":"/content/blackrock-poc"     
       }
     ]
   }
