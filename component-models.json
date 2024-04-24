@@ -279,7 +279,8 @@
         "valueType": "string",
         "name": "background_image",
         "label": "Background Image",
-        "multi": false
+        "multi": false,
+        "rootPath":"/content/dam/blackrock-poc"
       },
       {
         "component": "text",
@@ -313,6 +314,55 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
+      },     
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1Text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1Title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta2",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta2Text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta2Title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "aem-tag",
+        "name": "tags",
+        "label": "AEM Tag picker",
+        "valueType": "string",
+        "rootPath": "/content/cq:tags/blackrock"
       },
       {
         "component": "multiselect",
@@ -324,41 +374,6 @@
           {"name": "Right Image", "value": "right-image"},
           {"name": "Left Image", "value": "left-image"}
         ]
-      },
-      {
-        "component": "text",
-        "name": "cta_text",
-        "value": "",
-        "label": "CTA Text",
-        "valueType": "string"
-      },      
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "text",
-        "value": "",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "href",
-        "value": "",
-        "label": "CTA Link"
-      },
-      {
-        "component": "button",
-        "valueType": "string",
-        "name": "button",
-        "value": "",
-        "label": "CTA"
-      },
-      {
-        "component": "aem-tag",
-        "name": "tags",
-        "label": "AEM Tag picker",
-        "valueType": "string",
-        "rootPath": "/content/cq:tags/blackrock"
       }
     ]
   },
