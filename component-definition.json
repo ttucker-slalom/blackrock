@@ -191,8 +191,8 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Content Picker",
-                  "model": "aem-content-picker"
+                  "name": "Content Picker1",
+                  "model": "aem-content-picker1"
                 }
               }
             }
