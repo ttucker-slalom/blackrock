@@ -23,9 +23,7 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/title/v1/title",
-                "template": {
-                  "title": "Lorem ipsum"
-                }
+                "template": {}
               }
             }
           }

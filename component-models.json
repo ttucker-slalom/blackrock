@@ -352,6 +352,13 @@
         "name": "button",
         "value": "",
         "label": "CTA"
+      },
+      {
+        "component": "aem-tag",
+        "name": "tags",
+        "label": "AEM Tag picker",
+        "valueType": "string",
+        "rootPath": "/content/cq:tags/blackrock"
       }
     ]
   },
@@ -395,4 +402,5 @@
       }
     ]
   }
+  
 ]
