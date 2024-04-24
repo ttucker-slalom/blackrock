@@ -93,14 +93,14 @@
         "component": "text",
         "valueType": "string",
         "name": "text",
-        "value": "Button1",
+        "value": "",
         "label": "Text"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "title",
-        "value": "Button2",
+        "value": "",
         "label": "Title"
       },
       {
@@ -389,7 +389,9 @@
         "name": "reference",
         "value": "",
         "label": "AEM Content Picker",
-        "valueType": "string"  
+        "valueType": "string",
+        "description": "Select a fragment",
+        "rootPath":"/content/blackrock-poc"
       }
     ]
   }
