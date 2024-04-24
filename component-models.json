@@ -367,5 +367,18 @@
         "variationName": "contentFragmentVariation"
       }
     ]
+  },
+  {
+    "id": "aem-experience-fragment",
+    "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "name": "fragmentVariationPath",
+        "value": "",
+        "label": "Experience Fragment Path",
+        "valueType": "string",
+        "variationName": "experienceFragmentVariation"
+      }
+    ]
   }
 ]
