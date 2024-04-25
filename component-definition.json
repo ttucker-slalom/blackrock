@@ -222,7 +222,8 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Slide",
-                  "model": "slide"
+                  "model": "slide",
+                  "filter":"slide"
                 }
               }
             }

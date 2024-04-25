@@ -45,18 +45,15 @@
   {
     "id": "carousel",
     "components": [
-      "slide",
-      "text",
+      "slide"
+    ]
+  },
+  {
+    "id": "slide",
+    "components": [
       "image",
-      "button",
       "title",
-      "hero",
-      "cards",
-      "columns",
-      "teaser",
-      "aem-content-fragment",
-      "aem-experience-fragment",
-      "aem-content-picker"
+      "text"
     ]
   }
 ]
