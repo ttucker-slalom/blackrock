@@ -33,7 +33,8 @@
       "aem-experience-fragment",
       "aem-content-picker",
       "carousel",
-      "accordion"
+      "accordion",
+      "tabs"
     ]
   },
   {
@@ -61,5 +62,9 @@
       "hero",
       "teaser"
     ]
+  },
+  {
+    "id": "tab",
+    "components": ["tab"]
   }
 ]
