@@ -432,7 +432,7 @@
         "multi": false
       },
       {
-        "component": "text-area",
+        "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
@@ -451,7 +451,7 @@
         "valueType": "string"
       },
       {
-        "component": "text-area",
+        "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
