@@ -31,7 +31,8 @@
       "teaser",
       "aem-content-fragment",
       "aem-experience-fragment",
-      "aem-content-picker"
+      "aem-content-picker",
+      "carousel"
 
     ]
   },
