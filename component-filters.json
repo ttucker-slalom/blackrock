@@ -40,5 +40,22 @@
     "components": [
       "card"
     ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "slide",
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "teaser",
+      "aem-content-fragment",
+      "aem-experience-fragment",
+      "aem-content-picker"
+    ]
   }
 ]
