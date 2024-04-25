@@ -32,7 +32,8 @@
       "aem-content-fragment",
       "aem-experience-fragment",
       "aem-content-picker",
-      "carousel"
+      "carousel",
+      "accordion"
 
     ]
   },
@@ -45,15 +46,15 @@
   {
     "id": "carousel",
     "components": [
-      "slide"
+      "slide",
+      "image",
+      "title"
     ]
   },
   {
-    "id": "slide",
+    "id": "accordion",
     "components": [
-      "image",
-      "title",
-      "text"
+      "accordion-item"
     ]
   }
 ]
