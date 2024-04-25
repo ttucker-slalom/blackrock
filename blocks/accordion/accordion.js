@@ -1,6 +1,6 @@
 function hasWrapper(el) {
-    return !!el.firstElementChild && window.getComputedStyle(el.firstElementChild).display === 'block';
-  }
+  return !!el.firstElementChild && window.getComputedStyle(el.firstElementChild).display === 'block';
+}
 
 export default function decorate(block) {
   [...block.children].forEach((row) => {
