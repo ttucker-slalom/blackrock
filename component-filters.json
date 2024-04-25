@@ -34,7 +34,6 @@
       "aem-content-picker",
       "carousel",
       "accordion"
-
     ]
   },
   {
@@ -46,9 +45,7 @@
   {
     "id": "carousel",
     "components": [
-      "slide",
-      "image",
-      "title"
+      "slide"
     ]
   },
   {
