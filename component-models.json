@@ -477,17 +477,5 @@
         "label": "Body"
       }
     ]
-  },
-  {
-    "id": "section-tab",
-    "fields": [
-      {
-        "component": "text-input",
-        "name": "tab",
-        "value": "",
-        "label": "Tab",
-        "valueType": "string"
-      }
-    ]
-  }  
+  }
 ]
