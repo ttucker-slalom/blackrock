@@ -439,25 +439,5 @@
         "valueType": "string"
       }
     ]
-  },
-  {
-    "id": "accordion-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "value": "",
-        "label": "Label",
-        "valueType": "string"
-      },
-      {
-        "component": "text-area",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  }
-  
+  }  
 ]

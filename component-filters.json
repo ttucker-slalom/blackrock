@@ -45,13 +45,11 @@
   {
     "id": "carousel",
     "components": [
-      "slide"
-    ]
-  },
-  {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
+      "slide",
+      "image",
+      "title",
+      "hero",
+      "teaser"
     ]
   }
 ]
