@@ -2,7 +2,7 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
-const isDesktop = window.matchMedia('(min-width: 900px)');
+const isDesktop = window.matchMedia('(min-width: 1024px)');
 
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
@@ -102,7 +102,7 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['utilities', 'brand', 'sections'];
+  const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
@@ -117,7 +117,34 @@ export default async function decorate(block) {
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
+      if (navSection.querySelector('ul')) {
+        const level0 = navSection.parentElement;
+        const level1 = navSection.querySelector('ul');
+        navSection.classList.add('nav-drop');
+        level0.classList.add('main-menu');
+        level1.classList.add('menu-level-1');
+        level1.querySelectorAll(':scope > li').forEach((item) => {
+          if (item.querySelector('ul')) {
+            const level2 = item.querySelector('ul');
+            level2.classList.add('menu-level-2');
+            level2.querySelectorAll(':scope > li').forEach((subItem) => {
+              if (subItem.querySelector('ul')) {
+                const level3 = subItem.querySelector('ul');
+                level3.classList.add('menu-level-3');
+                navSection.appendChild(level3);
+                const emptyLi = level1.lastElementChild;
+                level1.removeChild(emptyLi);
+                navSection.addEventListener('mouseenter', (e) => {
+                  if (navSection === e.target) {
+                    const level1Height = level1.offsetHeight;
+                    level3.style.bottom = `-${level1Height + 96}px`;
+                  }
+                });
+              }
+            });
+          }
+        });
+      }
       navSection.addEventListener('click', () => {
         if (isDesktop.matches) {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
