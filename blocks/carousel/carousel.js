@@ -253,5 +253,5 @@ export default async function decorate(block) {
       bindEvents(block);
       startAutoScroll(block);
     }
- }
+  }
 }
