@@ -2,6 +2,13 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
 
 let intervalId;
+let isIfrmae = false;
+function iniFrame() {
+  if (window.location !== window.parent.location) {
+    // The page is in an iFrames
+    isIfrmae = true;
+  }
+}
 
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');
@@ -187,6 +194,8 @@ function createSlide(row, slideIndex, carouselId) {
 
 let carouselId = 0;
 export default async function decorate(block) {
+  iniFrame();
+  if (!isIfrmae) {
   carouselId += 1;
   block.setAttribute('id', `carousel-${carouselId}`);
   const rows = block.querySelectorAll(':scope > div');
@@ -244,4 +253,5 @@ export default async function decorate(block) {
     bindEvents(block);
     startAutoScroll(block);
   }
+}
 }
