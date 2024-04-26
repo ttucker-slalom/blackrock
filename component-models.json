@@ -8,6 +8,16 @@
         "label": "Theme"
       },
       {
+        "component": "text",
+        "name": "nav",
+        "label": "Nav"
+      },   
+      {
+        "component": "text",
+        "name": "footer",
+        "label": "Footer"
+      },
+      {
         "component": "richtext",
         "name": "abstract",
         "label": "Absrtact",
