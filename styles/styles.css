@@ -21,10 +21,13 @@
 
   /* Blackrock primary palette */
   --blk-black: #000;
+  --blk-gray: #161616;
+  --blk-gray-light: #616161;
   --blk-white: #FFF;
   --blk-orange: #FF4713;
   --blk-pink: #FC9BB3;
   --blk-yellow: #FFCE00;
+  --blk-blue: #005EB8;
 
   /* Blackrock neutral palette */
   --blk-neutral-1: #F4F1EB;
@@ -295,12 +298,20 @@ main img {
 }
 
 /* section metadata */
-main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
 
-main .section.dark {
+.section.light {
+  background-color: var(--blk-white);
+}
+
+.section.dark {
   background-color: var(--blk-black);
+  color: var(--blk-white);
+}
+
+.section.gray {
+  background-color: var(--blk-gray);
   color: var(--blk-white);
 }
