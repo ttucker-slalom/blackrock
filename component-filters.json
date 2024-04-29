@@ -29,8 +29,12 @@
       "cards",
       "columns",
       "teaser",
-      "aem-content-fragment"
-
+      "aem-content-fragment",
+      "aem-experience-fragment",
+      "aem-content-picker",
+      "carousel",
+      "accordion",
+      "tabs"
     ]
   },
   {
@@ -38,5 +42,29 @@
     "components": [
       "card"
     ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "slide",
+      "image",
+      "title",
+      "hero",
+      "teaser"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item",
+      "image",
+      "title",
+      "hero",
+      "teaser"
+    ]
+  },
+  {
+    "id": "tab",
+    "components": ["tab"]
   }
 ]

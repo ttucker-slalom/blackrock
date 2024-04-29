@@ -8,6 +8,16 @@
         "label": "Theme"
       },
       {
+        "component": "text",
+        "name": "nav",
+        "label": "Nav"
+      },   
+      {
+        "component": "text",
+        "name": "footer",
+        "label": "Footer"
+      },
+      {
         "component": "richtext",
         "name": "abstract",
         "label": "Absrtact",
@@ -192,12 +202,20 @@
         "valueType": "string",
         "options": [
           {
+            "name": "Nav Utilities",
+            "value": "nav-utilities"
+          },
+          {
             "name": "Dark",
             "value": "dark"
           },
           {
             "name": "Light",
             "value": "light"
+          },
+          {
+            "name": "Gray",
+            "value": "gray"
           }
         ]
       }
@@ -275,7 +293,8 @@
         "valueType": "string",
         "name": "background_image",
         "label": "Background Image",
-        "multi": false
+        "multi": false,
+        "rootPath":"/content/dam/blackrock-poc"
       },
       {
         "component": "text",
@@ -309,6 +328,55 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
+      },     
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1Text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta1Title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta2",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta2Text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta2Title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "aem-tag",
+        "name": "tags",
+        "label": "AEM Tag picker",
+        "valueType": "string",
+        "rootPath": "/content/cq:tags/blackrock"
       },
       {
         "component": "multiselect",
@@ -320,34 +388,6 @@
           {"name": "Right Image", "value": "right-image"},
           {"name": "Left Image", "value": "left-image"}
         ]
-      },
-      {
-        "component": "text",
-        "name": "cta_text",
-        "value": "",
-        "label": "CTA Text",
-        "valueType": "string"
-      },      
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "text",
-        "value": "",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "href",
-        "value": "",
-        "label": "CTA Link"
-      },
-      {
-        "component": "button",
-        "valueType": "string",
-        "name": "button",
-        "value": "",
-        "label": "CTA"
       }
     ]
   },
@@ -361,6 +401,97 @@
         "label": "Content Fragment path",
         "valueType": "string",
         "variationName": "contentFragmentVariation"
+      },
+      {
+        "component": "text-input",
+        "name": "variation",
+        "value": "",
+        "label": "Variation",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "aem-experience-fragment",
+    "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "name": "fragmentVariationPath",
+        "value": "",
+        "label": "Experience Fragment Path",
+        "valueType": "string",
+        "variationName": "experienceFragmentVariation"
+      }
+    ]
+  },
+  {
+    "id": "aem-content-picker",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "value": "",
+        "label": "AEM Content Picker",
+        "valueType": "string",
+        "description": "Select a fragment",
+        "rootPath":"/content/blackrock-poc"
+      }
+    ]
+  },
+  {
+    "id": "slide",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "accordion-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "label",
+        "value": "",
+        "label": "Label",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "tab",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "content",
+        "value": "",
+        "label": "Body"
       }
     ]
   }
