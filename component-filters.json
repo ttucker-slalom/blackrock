@@ -15,7 +15,9 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "aem-content-picker",
+      "aem-content-fragment"
     ]
   },
   {
