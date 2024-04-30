@@ -167,6 +167,10 @@
           {
             "name": "Featured Article",
             "value": "featured-article"
+          },
+          {
+            "name": "Image CTA",
+            "value": "image-cta"
           }
         ]
       }
