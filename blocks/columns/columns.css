@@ -58,8 +58,98 @@
   margin: 0;
 }
 
+/* Featured Article */
+.columns.featured-article {
+  padding: 0 1.25rem;
+  margin: 2.5rem 0 0;
+}
+
+.columns.featured-article > div {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  margin: 0 -.125rem;
+}
+
+.columns.featured-article .column-1 {
+  border-bottom: 1px solid var(--blk-black);
+}
+
+.columns.featured-article .column-1,
+.columns.featured-article .column-2 {
+  padding: 0 .125rem;
+}
+
+.columns.featured-article .column-1 h2 {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-l);
+  line-height: var(--heading-l-line-height);
+  margin: 0;
+}
+
+.columns.featured-article .column-1 p {
+  font-family: var(--body-font-family);
+  line-height: var(--body-m-line-height);
+  padding-top: 1.5rem;
+  margin: 0;
+}
+
+.columns.featured-article .column-1 .button-container {
+  padding: 2.5rem 0 2rem;
+}
+
+.columns.featured-article .column-1 .button-container,
+.columns.featured-article .column-2 .button-container {
+  margin: 0;
+}
+
+.columns.featured-article .column-1 .button-container .button,
+.columns.featured-article .column-2 .button-container .button {
+  padding: 0;
+}
+
+.columns.featured-article .column-1 .button-container .button {
+  color: var(--blk-black);
+}
+
+.columns.featured-article .column-2 {
+  display: flex;
+  flex-flow: nowrap column;
+  height: 100%;
+  padding: 2rem 1.5rem;
+  margin: 2.5rem 0 0;
+  background-color: var(--blk-black);
+  color: var(--blk-white);
+}
+
+.columns.featured-article .column-2 p {
+  font-family: var(--heading-font-family);
+  margin: 0;
+}
+
+.columns.featured-article .column-2 p:nth-child(1) {
+  font-size: var(--body-s);
+  color: var(--blk-orange);
+  text-transform: uppercase;
+  padding-bottom: .75rem;
+}
+
+.columns.featured-article .column-2 p:nth-child(2) {
+  font-size: var(--heading-l);
+  line-height: var(--heading-l-line-height);
+}
+
+.columns.featured-article .column-2 .button-container {
+  padding: 2.5rem 0 0;
+}
+
+.columns.featured-article .column-2 .button-container .button {
+  color: var(--blk-white);
+}
+
 @media (width >= 768px) {
-  .columns > div {
+  /* Main Teaser >= 768px */
+  .columns.main-teaser-block > div {
     flex-direction: row;
     align-items: center;
   }
@@ -89,10 +179,34 @@
     width: 100%;
     height: auto;
   }
+
+  /* Featured Article >= 768px */
+  .columns.featured-article {
+    padding: 0 2rem;
+  }
+
+  .columns.featured-article > div {
+    margin: 0 -.5rem;
+    padding: 0 2rem;
+  }
+
+  .columns.featured-article .column-1 {
+    padding: 0 0 2rem;
+  }
+
+  .columns.featured-article .column-1 .button-container {
+    padding: 2.5rem 0 0;
+  }
+
+  .columns.featured-article .column-1 h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 @media (width >= 1024px) {
-  .columns > div {
+  /* Main Teaser >= 1024px */
+  .columns.main-teaser-block > div {
     justify-content: space-between;
   }
 
@@ -133,6 +247,36 @@
     min-width: 100%;
     object-fit: cover;
   }
+
+  /* Featured Article >= 1024px */
+  .columns.featured-article {
+    padding: 0 2.5rem;
+    margin: 3.5rem 0 0;
+  }
+
+  .columns.featured-article > div {
+    flex-direction: row;
+    min-height: 328px;
+    align-items: stretch;
+  }
+
+  .columns.featured-article .column-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 0 0 58.3333%;
+    padding-right: 24px;
+    margin: 0 2rem 0 0;
+    max-width: 58.3333%;
+    height: auto;
+  }
+
+  .columns.featured-article .column-2 {
+    flex: 0 0 41.6666%;
+    margin: 0 .5rem;
+    max-width: 41.6666%;
+    height: auto;
+  }
 }
 
 @media (width >= 1440px) {
@@ -145,7 +289,24 @@
     line-height: var(--heading-xl-line-height);
     margin-block: 0;
   }
-}
 
-/* Featured Article */
-.columns.featured-article {}
+  /* Featured Article >= 1024px */
+  .columns.featured-article {
+    padding: 0 5rem;
+  }
+
+  .columns.featured-article > div {
+    min-height: 256px;
+  }
+
+  .columns.featured-article .column-1 {
+    justify-content: flex-end;
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  .columns.featured-article .column-2 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
