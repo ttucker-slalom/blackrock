@@ -171,6 +171,10 @@
           {
             "name": "Image CTA",
             "value": "image-cta"
+          },
+          {
+            "name": "Article List",
+            "value": "article-list"
           }
         ]
       }
