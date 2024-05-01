@@ -250,6 +250,7 @@ a.button.primary:hover::after {
 a.button.secondary {
   background-color: var(--blk-black);
   color: var(--blk-white);
+  font-style: normal;
 }
 
 /* a.button:hover, a.button:focus, button:hover, button:focus  {
