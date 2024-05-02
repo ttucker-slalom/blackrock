@@ -210,14 +210,14 @@
       },
       {
         "component": "text",
-        "name": "title",
+        "name": "card_title",
         "value": "",
         "label": "Title",
         "valueType": "string"
       },
       {
         "component": "select",
-        "name": "titleType",
+        "name": "card_titleType",
         "value": "h3",
         "label": "Title Type",
         "valueType": "string",
@@ -231,14 +231,14 @@
       },
       {
         "component": "richtext",
-        "name": "subtext",
+        "name": "card_subtext",
         "value": "",
         "label": "Subtext",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "card_text",
         "value": "",
         "label": "Text",
         "valueType": "string"
