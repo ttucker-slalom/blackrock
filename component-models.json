@@ -223,7 +223,7 @@
         ]
       },
       {
-        "component": "text",
+        "component": "richtext",
         "name": "subtext",
         "value": "",
         "label": "Subtext",
