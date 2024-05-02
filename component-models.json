@@ -210,14 +210,14 @@
       },
       {
         "component": "text",
-        "name": "title",
+        "name": "card_title",
         "value": "",
         "label": "Title",
         "valueType": "string"
       },
       {
         "component": "select",
-        "name": "titleType",
+        "name": "card_titleType",
         "value": "h3",
         "label": "Title Type",
         "valueType": "string",
