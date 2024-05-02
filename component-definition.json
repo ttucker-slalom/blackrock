@@ -116,7 +116,9 @@
                 "template": {
                   "name": "Cards",
                   "filter": "cards",
-                  "model": "cards"
+                  "model": "cards",
+                  "card_title": "New Title",
+                  "card_titleType": "h2"
                 }
               }
             }
