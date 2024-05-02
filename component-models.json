@@ -188,20 +188,7 @@
         "valueType": "string",
         "name": "string",
         "value": "",
-        "label": "Link"
-      },
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "value": "",
-        "label": "Classes",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Article List",
-            "value": "article-list"
-          }
-        ]
+        "label": "Column Link"
       }
     ]
   },
