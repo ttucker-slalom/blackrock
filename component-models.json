@@ -186,7 +186,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "cta",
+        "name": "string",
         "value": "",
         "label": "Link"
       },
