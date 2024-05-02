@@ -231,7 +231,7 @@
       },
       {
         "component": "richtext",
-        "name": "subtext",
+        "name": "card_subtext",
         "value": "",
         "label": "Subtext",
         "valueType": "string"
