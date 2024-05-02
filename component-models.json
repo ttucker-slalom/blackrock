@@ -213,6 +213,13 @@
         "name": "title",
         "value": "",
         "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h3",
+        "label": "Title Type",
         "valueType": "string",
         "options": [
           {"name": "h2", "value": "h2"},
