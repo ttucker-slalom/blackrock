@@ -238,7 +238,7 @@
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "card_text",
         "value": "",
         "label": "Text",
         "valueType": "string"
