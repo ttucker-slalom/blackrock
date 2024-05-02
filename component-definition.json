@@ -116,9 +116,7 @@
                 "template": {
                   "name": "Cards",
                   "filter": "cards",
-                  "model": "cards",
-                  "card_title": "New Title",
-                  "card_titleType": "h2"
+                  "model": "cards"
                 }
               }
             }
@@ -133,7 +131,9 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Card",
-                  "model": "card"
+                  "model": "card",
+                  "card_title": "New Title",
+                  "card_titleType": "h2"
                 }
               }
             }

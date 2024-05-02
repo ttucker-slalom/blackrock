@@ -210,7 +210,7 @@
       },
       {
         "component": "text",
-        "name": "card_title",
+        "name": "title",
         "value": "",
         "label": "Title",
         "valueType": "string",
@@ -224,7 +224,7 @@
       },
       {
         "component": "richtext",
-        "name": "card_subtext",
+        "name": "subtext",
         "value": "",
         "label": "Subtext",
         "valueType": "string"
