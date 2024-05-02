@@ -181,6 +181,31 @@
     ]
   },
   {
+    "id": "column",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Classes",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Article List",
+            "value": "article-list"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
