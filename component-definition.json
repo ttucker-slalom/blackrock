@@ -98,7 +98,10 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/columns/v1/columns",
-                "template": {}
+                "template": {
+                  "name": "Link",
+                  "model": "column"
+                }
               }
             }
           }
