@@ -171,10 +171,6 @@
           {
             "name": "Image CTA",
             "value": "image-cta"
-          },
-          {
-            "name": "Article List",
-            "value": "article-list"
           }
         ]
       }
@@ -193,6 +189,10 @@
           {
             "name": "Card CTA",
             "value": "card-cta"
+          },
+          {
+            "name": "Article List",
+            "value": "article-list"
           }
         ]
       }
