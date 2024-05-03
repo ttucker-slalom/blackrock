@@ -189,18 +189,6 @@
   margin-bottom: 0;
 }
 
-/* Article List */
-.columns.article-list {
-  padding: 0 1.25rem;
-}
-
-.columns.article-list > div {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-}
-
 .columns.article-list div[class*='column-'] {
   padding: 3.5rem .125rem 0;
   border-bottom: 1px solid var(--blk-black);
