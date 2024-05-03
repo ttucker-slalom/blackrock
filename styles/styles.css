@@ -231,7 +231,8 @@ a.button.primary:hover {
   text-decoration: none;
 }
 
-a.button.primary::after {
+a.button.primary::after,
+a.button.secondary::after {
   content: "";
   height: 3px;
   display: block;
@@ -243,7 +244,8 @@ a.button.primary::after {
   background-color: var(--blk-orange);
 }
 
-a.button.primary:hover::after {
+a.button.primary:hover::after,
+a.button.secondary:hover::after {
   width: 100%;
 }
 
@@ -251,6 +253,7 @@ a.button.secondary {
   background-color: var(--blk-black);
   color: var(--blk-white);
   font-style: normal;
+  position: relative;
 }
 
 /* a.button:hover, a.button:focus, button:hover, button:focus  {
